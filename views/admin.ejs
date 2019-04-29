@@ -49,14 +49,14 @@
                 </div>
 
                 <div id="candidate_table" style="display:none;">
-                        <!-- <div>
+                         <div>
                             <h3>Add Candidate</h3>
-                            <form method="post" action="/addcandidate" class="form-inline">
+                            <form method="post" action="/admin/addcandidate" class="form-inline">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="cand_name" name="cand_name" placeholder="Enter Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">
-                                    <select class="custom-select form-control" id="cand_constituency" name="cand_constituency">
+                                    <select class=" form-control form-control-lg" id="constituency" name="constituency" >
                                         <option selected>Constituency</option>
                                         <option value="Jabalpur">Jabalpur</option>
                                         <option value="Delhi">Delhi</option>
@@ -69,7 +69,7 @@
                             </form>
     
                         </div>
-                        <hr> -->
+                        <hr> 
                     <table class="table table-hover table-bordered table-striped">
                         <h4>Candidates</h4>
                         <thead>
@@ -103,6 +103,93 @@
             </div>
         </div>
     </div>
+
+    <!--footer start-->
+    <footer class="container-fluid sp-md tc-bg-4 clearfix" data-toggle="collapse">
+            <center><div class="footer-top"><a class="footer-logo" href="#"><img src="assets/img/logo.png" alt="Logo"  width="200" height="40" /></a></div></center>
+        <div class="container tc-bg-5 epd-x  pd-y-20 footer-top">
+            <div class="col-md-4 pd-x-l-110 epd-x-r">
+                <i class="fa fa-phone"></i>
+                <div class="dib">
+                    <p class="ff-ssp pd-x-l-15 lh-13 tc-7 text-uppercase fz-18 fw-b">phone</p>
+                    <p class="tc-7 fz-16 fw-n pd-x-l-15 pd-y-t-10 lh-11 ff-abee">(+1-888-77-8989 00)</p>
+                </div>
+            </div>
+            <div class="col-md-4 pd-x-l-75 epd-x-r">
+                <i class="flaticon-location-marker"></i>
+                <div class="dib">
+                    <p class="ff-ssp pd-x-l-15 lh-13 tc-7 text-uppercase fz-18 fw-b">address</p>
+                    <p class="tc-7 fz-16 fw-n pd-x-l-15 pd-y-t-10 lh-11 ff-abee">120D, Strikerate st, US1010A</p>
+                </div>
+            </div>
+            <div class="col-md-4 pd-x-l-35 epd-x-r">
+                <i class="fa fa-paper-plane"></i>
+                <div class="dib">
+                    <p class="ff-ssp pd-x-l-15 lh-13 tc-7 text-uppercase fz-18 fw-b">email</p>
+                    <p class="tc-7 fz-16 fw-n pd-x-l-15 pd-y-t-10 lh-11 ff-abee">info@domianname.com</p>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <!-- footer second row -->
+      <!--  </div>
+        <div class="clr"></div>
+        <div class="container epd-x ">
+            <div class="footer-bottom-wrapper pd-y-t-80">
+                <div class="col-sm-4 epd-x-l pd-x-r-40">
+                    <img src="img/logo-1.png" alt="logo">
+                    <p class="ff-abee fw-n fz-15 lh-26 tc-8 pd-y-t-20 m-y-b-25 pd-y-b-25">The Brady Bunch the Brady Bunch that is the way we all go on got a dream became thats Bunch we are ark we all became the Brady.</p>
+
+                    <div class="section-sub-heading-left-4">subscribe us</div>
+                    <form action="http://world5.commonsupport.com/2017/Senator/posr" class="pos-r">
+                        <input type="email" placeholder="mail@yourdomian.com" id="footer-1-subscribe-mail">
+                        
+                    </form>
+                </div>
+                <div class="col-sm-4 pd-x-l-60 pd-x-r-25">
+                    <div class="section-sub-heading-left-4">recent posts</div>
+                    <div class="footer-recent-posts pd-y-b-30">
+                        <div class="footer-recent-posts-img pd-x-r-20">
+                            <img src="img/footer/footer-1.png" alt="">
+                        </div>
+                        <a class="footer-recent-posts-text db" href="#">
+                            <span class="tc-2 ff-abee fw-n fz-13">26 July 2018</span>
+                            <h6 class="text-uppercase pd-y-t-15 fz-14 ff-ssp fw-n tc-8">Days are all HappINESS is key and Free</h6>
+                        </a>
+                    </div>
+                    <div class="footer-recent-posts pd-y-b-30">
+                        <div class="footer-recent-posts-img pd-x-r-20">
+                            <img src="img/footer/footer-2.png" alt="">
+                        </div>
+                        <a class="footer-recent-posts-text db" href="#">
+                            <span class="tc-2 ff-abee fw-n fz-13">08 August 2018</span>
+                            <h6 class="text-uppercase pd-y-t-15 fz-14 ff-ssp fw-n tc-8">Someday the mountain  bike might SHOOT</h6>
+                        </a>
+                    </div>
+                    <div class="footer-recent-posts">
+                        <div class="footer-recent-posts-img pd-x-r-20">
+                            <img src="img/footer/footer-3.png" alt="">
+                        </div>
+                        <a class="footer-recent-posts-text db" href="#">
+                            <span class="tc-2 ff-abee fw-n fz-13">15 September 2018</span>
+                            <h6 class="text-uppercase pd-y-t-15 fz-14 ff-ssp fw-n tc-8">baby think of me once in way awhile TO BE WITH</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4 epd-x-r pd-x-l-50">
+                    <div class="section-sub-heading-left-4">send us a message</div>
+                    <form action="http://world5.commonsupport.com/2017/Senator/posr">
+                        <input type="text" placeholder="Your Name" id="footer-1-send-name">
+                        <input type="email" placeholder="Your Email" id="footer-1-send-mail">
+                        <textarea id="footer-1-send-message" placeholder="Your Message"></textarea>
+                        <button class="btn-six db" type="submit">send</button>
+                    </form>
+                </div>
+            </div>
+        </div>-->
+    </footer>
+    <div class="clr"></div>
+    <!-- footer end-->
+
     </body>
 
     </html>
