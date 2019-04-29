@@ -137,8 +137,8 @@ router.get('/fetchvoters', function (req, res, next) {
 
 router.post('/addcandidate', function (req, res, next) {
 	var candidate ={
-		name: req.body.cand_name,
-		constituency: req.body.cand_constituency
+		name: req.body.name,
+		constituency: req.body.constituency
 	}
 
 	req.app.db.models.Candidate.create(candidate, function (err, data) {
