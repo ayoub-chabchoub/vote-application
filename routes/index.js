@@ -36,7 +36,7 @@ router.get('/votecandidate', function (req, res, next) {
 	res.clearCookie('votePayload');
 
 	req.app.db.models.Candidate.find({
-		constituency: constituency
+		//constituency: constituency
 	}, function (err, data) {
 		if (err) {
 			console.log(err);
@@ -378,11 +378,11 @@ router.get('/voteadded/:id', function (req, res, next) {
 			console.log(err);
 			return next(err);
 		}
-		data.hasVoted = true;
+		//data.hasVoted = true;
 
-		data.save();
-
+		data.save();	
 		return res.redirect('/');
+		
 	});
 });
 

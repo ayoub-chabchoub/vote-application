@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var index = require('./routes/index');
 var admin = require('./routes/admin');
 var jwt = require('jsonwebtoken');
+var fs = require('fs');
 var keyConfig = require('./config');
 
 var app = express();
@@ -67,26 +68,38 @@ app.db.once('open', function () {
 });
 
 import { models } from './model';
+import { fstat } from 'fs';
 models(app, mongoose);
 
 /**************************************MongoDB Database***************************************/
 
 
 var debug = require('debug')('votechain-node:server');
+//var http = require('https');
 var http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '3000');//3443;//
+
+
 app.set('port', port);
+
 
 /**
  * Create HTTP server.
  */
 
+ const httpsOptions = {
+   cert:fs.readFileSync(path.join(__dirname , 'ssl' , 'server.crt')),
+   key:fs.readFileSync(path.join(__dirname , 'ssl' , 'server.key')),
+ }
+
+// var server = http.createServer(httpsOptions ,app);
 var server = http.createServer(app);
+
 
 /**
  * Listen on provided port, on all network interfaces.
